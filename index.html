@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>avto.ok — Подготовка к экзамену ПДД</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-icon">A</div>
+    avto<span class="logo-dot">.ok</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#how" data-ru="Как работает" data-uz="Qanday ishlaydi">Как работает</a></li>
+    <li><a href="#features" data-ru="Возможности" data-uz="Imkoniyatlar">Возможности</a></li>
+    <li><a href="#pricing" data-ru="Тарифы" data-uz="Narxlar">Тарифы</a></li>
+    <li><a href="#faq" data-ru="Вопросы" data-uz="Savollar">Вопросы</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLang('ru')">RU</button>
+      <button class="lang-btn" onclick="setLang('uz')">UZ</button>
+    </div>
+    <a href="#pricing" class="btn-primary">
+      <span data-ru="Начать бесплатно" data-uz="Bepul boshlash">Начать бесплатно</span>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-sign-deco">🚦</div>
+  <div class="hero-road-stripe"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        <span data-ru="№1 платформа подготовки к ПДД в Узбекистане" data-uz="O'zbekistondagi YHQ imtihoniga №1 tayyorgarlik platformasi">№1 платформа подготовки к ПДД в Узбекистане</span>
+      </div>
+      <h1 class="hero-title">
+        <span data-ru="Сдайте ПДД<br>с первого раза —<br><span>гарантировано</span>" data-uz="YHQ imtihonini<br>birinchi urinishda —<br><span>kafolatlangan</span>">
+          Сдайте ПДД<br>с первого раза —<br><span>гарантировано</span>
+        </span>
+      </h1>
+      <div class="animated-road"></div>
+      <p class="hero-subtitle" data-ru="Умная платформа с 1200+ вопросами, AI-объяснениями и адаптивным обучением. Не юридическим языком — а понятно и с реальными ситуациями." data-uz="1200+ savol, AI-tushuntirish va moslashuvchi o'rganish bilan aqlli platforma. Yuridik tilda emas — tushunarli va real vaziyatlar bilan.">
+        Умная платформа с 1200+ вопросами, AI-объяснениями и адаптивным обучением. Не юридическим языком — а понятно и с реальными ситуациями.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#pricing" class="btn-hero-primary" data-ru="Попробовать бесплатно" data-uz="Bepul sinab ko'ring">Попробовать бесплатно</a>
+        <a href="#how" class="btn-hero-ghost" data-ru="Как это работает?" data-uz="Bu qanday ishlaydi?">Как это работает?</a>
+      </div>
+      <div class="hero-guarantee">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L8.5 5H13L9.5 7.5L11 11.5L7 9L3 11.5L4.5 7.5L1 5H5.5L7 1Z" fill="rgba(232,160,32,0.6)"/></svg>
+        <span data-ru="Не сдали с первого раза — вернём деньги или дадим бесплатный доступ" data-uz="Birinchi urinishda topshira olmadingizmi — pulni qaytaramiz yoki bepul kirish beramiz">Не сдали с первого раза — вернём деньги или дадим бесплатный доступ</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-num">94%</div>
+        <div class="stat-label" data-ru="сдают экзамен с первого раза после курса" data-uz="birinchi urinishda imtihon topshiradilar">сдают экзамен с первого раза после курса</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">1200+</div>
+        <div class="stat-label" data-ru="актуальных вопросов с объяснениями" data-uz="tushuntirishli dolzarb savollar">актуальных вопросов с объяснениями</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-ru="15 дн" data-uz="15 kun">15 дн</div>
+        <div class="stat-label" data-ru="средний срок до полной готовности" data-uz="to'liq tayyorgarlikkacha o'rtacha muddat">средний срок до полной готовности</div>
+      </div>
+      <div class="stat-card stat-card-wide">
+        <div class="stat-icon-big">🏆</div>
+        <div>
+          <div class="stat-num" style="font-size:20px;" data-ru="Сдашь ли ты завтра?" data-uz="Ertaga topshira olasizmi?">Сдашь ли ты завтра?</div>
+          <div class="stat-label" data-ru="Реальная симуляция экзамена ГАИ с прогнозом готовности" data-uz="Tayyorlik prognozi bilan GAI imtihonining haqiqiy simulyatsiyasi">Реальная симуляция экзамена ГАИ с прогнозом готовности</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-inner">
+    <div class="how-header fade-up">
+      <div class="section-label" data-ru="Как это работает" data-uz="Bu qanday ishlaydi">Как это работает</div>
+      <h2 class="section-title" data-ru="4 шага до прав в кармане" data-uz="Cho'ntakdagi huquqlarga 4 qadam">4 шага до прав в кармане</h2>
+      <p class="section-sub" data-ru="Никакой воды — только системный подход, который реально работает" data-uz="Hech qanday ortiqchalik yo'q — faqat haqiqatan ham ishlaydigan tizimli yondashuv">Никакой воды — только системный подход, который реально работает</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item fade-up">
+        <div class="step-num">1<div class="step-emoji">📝</div></div>
+        <div class="step-title" data-ru="Пройдите тест" data-uz="Test o'ting">Пройдите тест</div>
+        <div class="step-desc" data-ru="Бесплатный стартовый тест выявит ваши слабые темы и даст персональный план" data-uz="Bepul boshlang'ich test zaif mavzularingizni aniqlaydi va shaxsiy reja beradi">Бесплатный стартовый тест выявит ваши слабые темы и даст персональный план</div>
+      </div>
+      <div class="step-item fade-up" style="transition-delay:0.1s">
+        <div class="step-num">2<div class="step-emoji">📚</div></div>
+        <div class="step-title" data-ru="Учитесь умно" data-uz="Aqlli o'rganing">Учитесь умно</div>
+        <div class="step-desc" data-ru="Система подаёт вопросы, где вы чаще ошибаетесь. AI объясняет каждую ошибку простым языком" data-uz="Tizim ko'proq xato qiladigan savollarga yo'naltiradi. AI har bir xatoni oddiy tilda tushuntiradi">Система подаёт вопросы, где вы чаще ошибаетесь. AI объясняет каждую ошибку простым языком</div>
+      </div>
+      <div class="step-item fade-up" style="transition-delay:0.2s">
+        <div class="step-num accent">3<div class="step-emoji">🎯</div></div>
+        <div class="step-title" data-ru="Симуляция ГАИ" data-uz="GAI simulyatsiyasi">Симуляция ГАИ</div>
+        <div class="step-desc" data-ru="Режим «как в ГАИ» — строгий таймер, без подсказок. Узнайте свой шанс сдачи до реального экзамена" data-uz="«GAIdagi kabi» rejim — qat'iy taymer, maslahatlar yo'q. Haqiqiy imtihondan oldin topshirish imkoniyatingizni bilib oling">Режим «как в ГАИ» — строгий таймер, без подсказок. Узнайте свой шанс сдачи до реального экзамена</div>
+      </div>
+      <div class="step-item fade-up" style="transition-delay:0.3s">
+        <div class="step-num">4<div class="step-emoji">🚗</div></div>
+        <div class="step-title" data-ru="Сдайте и езжайте!" data-uz="Topshiring va haydang!">Сдайте и езжайте!</div>
+        <div class="step-desc" data-ru="Идите на экзамен когда готовы на 100%. Если не сдали — вернём деньги" data-uz="100% tayyor bo'lganingizda imtihonga boring. Topshira olmadingizmi — pulni qaytaramiz">Идите на экзамен когда готовы на 100%. Если не сдали — вернём деньги</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label" data-ru="Возможности" data-uz="Imkoniyatlar">Возможности</div>
+      <h2 class="section-title section-title-light" data-ru="Всё, что нужно для уверенной сдачи" data-uz="Ishonchli topshirish uchun kerak bo'lgan hamma narsa">Всё, что нужно для уверенной сдачи</h2>
+      <p class="section-sub section-sub-light" data-ru="Не просто тесты — полноценная система подготовки с технологиями, которых нет у конкурентов" data-uz="Shunchaki testlar emas — raqobatchilar ega bo'lmagan texnologiyalar bilan to'liq tayyorgarlik tizimi">Не просто тесты — полноценная система подготовки с технологиями, которых нет у конкурентов</p>
+    </div>
+    <div class="features-layout">
+      <div class="feature-list" id="featureList">
+        <div class="feature-item active" onclick="selectFeature(this, 0)">
+          <div class="feature-icon">🤖</div>
+          <div>
+            <div class="feature-name" data-ru="AI-объяснение ошибок" data-uz="Xatolarni AI-tushuntirish">AI-объяснение ошибок</div>
+            <div class="feature-desc" data-ru='«Ты выбрал A, потому что перепутал этот знак с похожим. Вот в чём разница...» — не просто «неправильно», а почему' data-uz='«Siz A ni tanladingiz, chunki bu belgini o\'xshashi bilan adashtirdingiz. Farqi mana...» — faqat «noto\'g\'ri» emas, balki nima uchun'>«Ты выбрал A, потому что перепутал этот знак с похожим. Вот в чём разница...» — не просто «неправильно», а почему</div>
+          </div>
+        </div>
+        <div class="feature-item" onclick="selectFeature(this, 1)">
+          <div class="feature-icon">📊</div>
+          <div>
+            <div class="feature-name" data-ru="Адаптивное обучение" data-uz="Moslashuvchi o'rganish">Адаптивное обучение</div>
+            <div class="feature-desc" data-ru="Система отслеживает ваши слабые темы и автоматически увеличивает частоту вопросов там, где нужна практика" data-uz="Tizim zaif mavzularingizni kuzatib boradi va mashq kerak bo'lgan joylarda savollar chastotasini avtomatik oshiradi">Система отслеживает ваши слабые темы и автоматически увеличивает частоту вопросов там, где нужна практика</div>
+          </div>
+        </div>
+        <div class="feature-item" onclick="selectFeature(this, 2)">
+          <div class="feature-icon">⏱️</div>
+          <div>
+            <div class="feature-name" data-ru="Симуляция экзамена ГАИ" data-uz="GAI imtihoni simulyatsiyasi">Симуляция экзамена ГАИ</div>
+            <div class="feature-desc" data-ru="20 вопросов, 20 минут, без подсказок — точная копия реального экзамена. Стресс-тест готовит психологически" data-uz="20 savol, 20 daqiqa, maslahatlar yo'q — haqiqiy imtihonning aniq nusxasi. Stress-test psixologik jihatdan tayyorlaydi">20 вопросов, 20 минут, без подсказок — точная копия реального экзамена. Стресс-тест готовит психологически</div>
+          </div>
+        </div>
+        <div class="feature-item" onclick="selectFeature(this, 3)">
+          <div class="feature-icon">📈</div>
+          <div>
+            <div class="feature-name" data-ru="Прогноз готовности" data-uz="Tayyorlik prognozi">Прогноз готовности</div>
+            <div class="feature-desc" data-ru='Честный ответ на вопрос «Сдашь ли ты завтра?» — с конкретным процентом и списком тем, которые надо повторить' data-uz='«Ertaga topshira olasizmi?» savoliga halol javob — aniq foiz va takrorlash kerak bo\'lgan mavzular ro\'yxati bilan'>Честный ответ на вопрос «Сдашь ли ты завтра?» — с конкретным процентом и списком тем, которые надо повторить</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-preview" id="featurePreview">
+        <div class="preview-label" data-ru="AI-ПОМОЩНИК" data-uz="AI-YORDAMCHI">AI-ПОМОЩНИК</div>
+        <div class="progress-bar-outer"><div class="progress-bar-inner" id="previewProgress" style="width:68%"></div></div>
+        <div class="preview-screen">
+          <div class="question-mock" id="previewQuestion" data-ru="Что означает этот дорожный знак с красным треугольником и восклицательным знаком?" data-uz="Qizil uchburchak va undov belgisi bo'lgan bu yo'l belgisi nimani anglatadi?">
+            Что означает этот дорожный знак с красным треугольником и восклицательным знаком?
+          </div>
+          <div class="answer-option" id="opt0">
+            <div class="option-dot">A</div>
+            <span data-ru="Прочие опасности" data-uz="Boshqa xavflar">Прочие опасности</span>
+          </div>
+          <div class="answer-option wrong" id="opt1">
+            <div class="option-dot">✕</div>
+            <span data-ru="Аварийный объезд" data-uz="Favqulodda aylanma yo'l">Аварийный объезд</span>
+          </div>
+          <div class="answer-option correct" id="opt2">
+            <div class="option-dot">✓</div>
+            <span data-ru="Прочие опасности (ваш выбор)" data-uz="Boshqa xavflar (sizning tanlovingiz)">Прочие опасности (ваш выбор)</span>
+          </div>
+          <div class="ai-hint" id="previewHint">
+            <span class="ai-hint-icon" data-ru="🤖 AI-подсказка: " data-uz="🤖 AI-maslahat: ">🤖 AI-подсказка: </span>
+            <span id="hintText" data-ru="Вы перепутали знак 1.17 с предупреждающим знаком. Запомните: этот знак всегда в треугольнике с чёрным восклицательным знаком." data-uz="Siz 1.17 belgisini ogohlantiruvchi belgi bilan adashtirdingiz. Yodda tuting: bu belgi doimo qora undov belgisi bilan uchburchakda bo'ladi.">Вы перепутали знак 1.17 с предупреждающим знаком. Запомните: этот знак всегда в треугольнике с чёрным восклицательным знаком.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-inner">
+    <div class="pricing-header fade-up">
+      <div class="section-label" data-ru="Тарифы" data-uz="Narxlar">Тарифы</div>
+      <h2 class="section-title section-title-light" data-ru="Простые и честные цены" data-uz="Oddiy va halol narxlar">Простые и честные цены</h2>
+      <p class="section-sub section-sub-light" data-ru="Начните бесплатно. Переходите на полный доступ когда будете готовы." data-uz="Bepul boshlang. Tayyor bo'lganingizda to'liq kirishga o'ting.">Начните бесплатно. Переходите на полный доступ когда будете готовы.</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- FREE -->
+      <div class="price-card fade-up">
+        <div class="plan-name" data-ru="Бесплатно" data-uz="Bepul">Бесплатно</div>
+        <div class="plan-price">0 <span data-ru="сум" data-uz="so'm">сум</span></div>
+        <div class="plan-desc" data-ru="Попробуйте платформу без регистрации карты" data-uz="Karta ro'yxatdan o'tkazmasdan platformani sinab ko'ring">Попробуйте платформу без регистрации карты</div>
+        <ul class="plan-features">
+          <li><div class="check-icon">✓</div><span data-ru="50 вопросов в день" data-uz="Kuniga 50 ta savol">50 вопросов в день</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="1 экзамен в день" data-uz="Kuniga 1 imtihon">1 экзамен в день</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="Базовая статистика" data-uz="Asosiy statistika">Базовая статистика</span></li>
+          <li><div class="cross-icon">✕</div><span style="color:var(--text-muted)" data-ru="AI-объяснения" data-uz="AI-tushuntirishlar">AI-объяснения</span></li>
+          <li><div class="cross-icon">✕</div><span style="color:var(--text-muted)" data-ru="Адаптивное обучение" data-uz="Moslashuvchi o'rganish">Адаптивное обучение</span></li>
+        </ul>
+        <button class="btn-plan btn-plan-default" data-ru="Начать бесплатно" data-uz="Bepul boshlash">Начать бесплатно</button>
+      </div>
+
+      <!-- STANDARD - FEATURED -->
+      <div class="price-card featured fade-up" style="transition-delay:0.1s">
+        <div class="popular-badge" data-ru="Популярный выбор" data-uz="Mashhur tanlov">★ Популярный выбор</div>
+        <div class="plan-name" data-ru="Стандарт — 30 дней" data-uz="Standart — 30 kun">Стандарт — 30 дней</div>
+        <div class="plan-price">49 900 <span data-ru="сум" data-uz="so'm">сум</span></div>
+        <div class="plan-desc" data-ru="Всё что нужно для уверенной подготовки" data-uz="Ishonchli tayyorgarlik uchun kerak bo'lgan hamma narsa">Всё что нужно для уверенной подготовки</div>
+        <ul class="plan-features">
+          <li><div class="check-icon">✓</div><span data-ru="1200+ вопросов без лимита" data-uz="Limitsiz 1200+ savol">1200+ вопросов без лимита</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="Безлимит экзаменов" data-uz="Cheksiz imtihonlar">Безлимит экзаменов</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="AI-объяснения ошибок" data-uz="Xatolarni AI-tushuntirish">AI-объяснения ошибок</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="Адаптивное обучение" data-uz="Moslashuvchi o'rganish">Адаптивное обучение</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="Прогноз готовности" data-uz="Tayyorlik prognozi">Прогноз готовности</span></li>
+        </ul>
+        <button class="btn-plan btn-plan-featured" data-ru="Купить доступ" data-uz="Kirish sotib olish">Купить доступ</button>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="price-card fade-up" style="transition-delay:0.2s">
+        <div class="plan-name" data-ru="Премиум — 90 дней" data-uz="Premium — 90 kun">Премиум — 90 дней</div>
+        <div class="plan-price">99 900 <span data-ru="сум" data-uz="so'm">сум</span></div>
+        <div class="plan-desc" data-ru="Максимальная подготовка + гарантия возврата" data-uz="Maksimal tayyorgarlik + qaytarish kafolati">Максимальная подготовка + гарантия возврата</div>
+        <ul class="plan-features">
+          <li><div class="check-icon">✓</div><span data-ru="Всё из Стандарта" data-uz="Standartdan hamma narsa">Всё из Стандарта</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="Приоритетная поддержка" data-uz="Ustuvor qo'llab-quvvatlash">Приоритетная поддержка</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="Сертификат о прохождении" data-uz="O'tish sertifikati">Сертификат о прохождении</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="Гарантия возврата денег" data-uz="Pul qaytarish kafolati">Гарантия возврата денег</span></li>
+          <li><div class="check-icon">✓</div><span data-ru="Telegram Bot-уведомления" data-uz="Telegram Bot-xabarnomalar">Telegram Bot-уведомления</span></li>
+        </ul>
+        <button class="btn-plan btn-plan-default" data-ru="Купить Премиум" data-uz="Premium sotib olish">Купить Премиум</button>
+      </div>
+    </div>
+    <div class="pricing-note">
+      <span data-ru="🔒 Оплата через Click, Payme, Uzcard, Humo · Безопасная транзакция" data-uz="🔒 Click, Payme, Uzcard, Humo orqali to'lov · Xavfsiz tranzaksiya">🔒 Оплата через Click, Payme, Uzcard, Humo · Безопасная транзакция</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="faq-layout">
+      <div class="faq-left fade-up">
+        <div class="section-label" data-ru="Вопросы и ответы" data-uz="Savollar va javoblar">Вопросы и ответы</div>
+        <h2 class="section-title" data-ru="Часто задают" data-uz="Ko'p so'raladi">Часто задают</h2>
+        <p class="section-sub" data-ru="Не нашли ответ? Напишите нам напрямую — ответим быстро." data-uz="Javob topa olmadingizmi? Bizga to'g'ridan-to'g'ri yozing — tez javob beramiz.">Не нашли ответ? Напишите нам напрямую — ответим быстро.</p>
+        <div class="faq-contact">
+          <p data-ru="Поддержка работает 7 дней в неделю с 9:00 до 22:00 по Ташкентскому времени" data-uz="Qo'llab-quvvatlash Toshkent vaqti bilan 9:00 dan 22:00 gacha haftasiga 7 kun ishlaydi">Поддержка работает 7 дней в неделю с 9:00 до 22:00 по Ташкентскому времени</p>
+          <a href="https://t.me/avtookuz" target="_blank" class="btn-telegram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.94z"/></svg>
+            <span data-ru="Написать в Telegram" data-uz="Telegramga yozish">Написать в Telegram</span>
+          </a>
+        </div>
+      </div>
+      <div class="faq-list fade-up" style="transition-delay:0.15s">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span data-ru="Вопросы актуальные или устаревшие?" data-uz="Savollar dolzarb yoki eskirganmi?">Вопросы актуальные или устаревшие?</span>
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-a" data-ru="Все 1200+ вопросов соответствуют актуальной базе экзамена ГАИ Узбекистана. Мы обновляем базу при каждом изменении официальных ПДД и уведомляем пользователей об изменениях." data-uz="Barcha 1200+ savol O'zbekiston GAI imtihonining dolzarb bazasiga mos keladi. Rasmiy YHQ har o'zgarganda bazani yangilaymiz va foydalanuvchilarga o'zgarishlar haqida xabar beramiz.">Все 1200+ вопросов соответствуют актуальной базе экзамена ГАИ Узбекистана. Мы обновляем базу при каждом изменении официальных ПДД и уведомляем пользователей об изменениях.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span data-ru="Как работает гарантия возврата?" data-uz="Qaytarish kafolati qanday ishlaydi?">Как работает гарантия возврата?</span>
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-a" data-ru="Если вы прошли курс по нашей программе и не сдали экзамен с первого раза — мы возвращаем деньги в течение 24 часов или даём бесплатный доступ на следующие 30 дней. Без вопросов и бумажек." data-uz="Agar bizning dasturimiz bo'yicha kursni o'tib, birinchi urinishda imtihon topshira olmagan bo'lsangiz — 24 soat ichida pulni qaytaramiz yoki keyingi 30 kunlik bepul kirish beramiz. Hech qanday savol va hujjat kerak emas.">Если вы прошли курс по нашей программе и не сдали экзамен с первого раза — мы возвращаем деньги в течение 24 часов или даём бесплатный доступ на следующие 30 дней. Без вопросов и бумажек.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span data-ru="Подходит для категорий A, B, C, D?" data-uz="A, B, C, D toifalari uchun mosmi?">Подходит для категорий A, B, C, D?</span>
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-a" data-ru="Сейчас платформа полностью покрывает категорию B (легковые автомобили). Категории A, C и D добавляем в следующем обновлении — вы можете записаться в лист ожидания прямо сейчас." data-uz="Hozirda platforma B toifasini (yengil avtomobillar) to'liq qamrab oladi. A, C va D toifalari keyingi yangilanishda qo'shiladi — hozir kutish ro'yxatiga yozilishingiz mumkin.">Сейчас платформа полностью покрывает категорию B (легковые автомобили). Категории A, C и D добавляем в следующем обновлении — вы можете записаться в лист ожидания прямо сейчас.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span data-ru="Можно ли заниматься без интернета?" data-uz="Internetsizsiz mashg'ulot o'tkazish mumkinmi?">Можно ли заниматься без интернета?</span>
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-a" data-ru="Веб-версия работает как PWA — её можно установить на телефон и заниматься в режиме офлайн. Прогресс синхронизируется при следующем подключении к интернету." data-uz="Veb-versiya PWA sifatida ishlaydi — uni telefonga o'rnatish va oflayn rejimda mashg'ulot o'tkazish mumkin. Keyingi internet ulanishda progress sinxronlashadi.">Веб-версия работает как PWA — её можно установить на телефон и заниматься в режиме офлайн. Прогресс синхронизируется при следующем подключении к интернету.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span data-ru="Сколько времени нужно для подготовки?" data-uz="Tayyorgarlik uchun qancha vaqt kerak?">Сколько времени нужно для подготовки?</span>
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-a" data-ru="В среднем наши пользователи достигают готовности за 10–15 дней при занятиях по 20–30 минут в день. Система сама скажет вам, когда вы готовы идти на экзамен — по объективным показателям, а не на ощущение." data-uz="O'rtacha foydalanuvchilarimiz kuniga 20-30 daqiqa mashg'ulot bilan 10-15 kun ichida tayyorgarlikka erishadilar. Tizimning o'zi sizga imtihonga borishga tayyor ekanligingizni aytadi — his-tuyg'uga emas, ob'ektiv ko'rsatkichlarga asoslanib.">В среднем наши пользователи достигают готовности за 10–15 дней при занятиях по 20–30 минут в день. Система сама скажет вам, когда вы готовы идти на экзамен — по объективным показателям, а не на ощущение.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span data-ru="Как оплатить и когда откроется доступ?" data-uz="Qanday to'lash va kirish qachon ochiladi?">Как оплатить и когда откроется доступ?</span>
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-a" data-ru="Принимаем Click, Payme, Humo, UzCard. Доступ активируется моментально после подтверждения платежа — обычно в течение нескольких секунд. Электронный чек приходит на email или в Telegram." data-uz="Click, Payme, Humo, UzCard qabul qilamiz. Kirish to'lov tasdiqlanganidan keyin — odatda bir necha soniya ichida — darhol faollashadi. Elektron chek email yoki Telegramga keladi.">Принимаем Click, Payme, Humo, UzCard. Доступ активируется моментально после подтверждения платежа — обычно в течение нескольких секунд. Электронный чек приходит на email или в Telegram.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta">
+  <div class="cta-glow-left"></div>
+  <div class="cta-glow-right"></div>
+  <div class="cta-road"></div>
+  <div class="section-inner">
+    <div class="fade-up">
+      <h2 class="cta-title">
+        <span data-ru="Готовы сдать ПДД<br><span>с первого раза?</span>" data-uz="YHQ imtihonini<br><span>birinchi urinishda</span> topshirishga tayyormisiz?">
+          Готовы сдать ПДД<br><span>с первого раза?</span>
+        </span>
+      </h2>
+      <p class="cta-sub" data-ru="Присоединяйтесь к тысячам водителей, которые уже сдали благодаря avto.ok" data-uz="avto.ok tufayli allaqachon topshirgan minglab haydovchilarga qo'shiling">Присоединяйтесь к тысячам водителей, которые уже сдали благодаря avto.ok</p>
+      <div class="cta-buttons">
+        <a href="#pricing" class="btn-hero-primary" data-ru="Начать бесплатно" data-uz="Bepul boshlash">Начать бесплатно</a>
+        <a href="#pricing" class="btn-hero-ghost" data-ru="Посмотреть тарифы" data-uz="Narxlarni ko'rish">Посмотреть тарифы</a>
+      </div>
+      <div class="cta-guarantee">
+        <div class="guarantee-item">
+          <div class="guarantee-check">✓</div>
+          <span data-ru="Без привязки карты" data-uz="Kartasiz">Без привязки карты</span>
+        </div>
+        <div class="guarantee-item">
+          <div class="guarantee-check">✓</div>
+          <span data-ru="Гарантия возврата" data-uz="Qaytarish kafolati">Гарантия возврата</span>
+        </div>
+        <div class="guarantee-item">
+          <div class="guarantee-check">✓</div>
+          <span data-ru="Поддержка 7 дней в неделю" data-uz="Haftasiga 7 kun qo'llab-quvvatlash">Поддержка 7 дней в неделю</span>
+        </div>
+        <div class="guarantee-item">
+          <div class="guarantee-check">✓</div>
+          <span data-ru="Актуальная база ГАИ 2025" data-uz="Dolzarb GAI bazasi 2025">Актуальная база ГАИ 2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">
+      <div class="logo-icon" style="width:30px;height:30px;font-size:14px;border-radius:7px;">A</div>
+      avto.ok
+    </a>
+    <ul class="footer-links">
+      <li><a href="#" data-ru="Политика конфиденциальности" data-uz="Maxfiylik siyosati">Политика конфиденциальности</a></li>
+      <li><a href="#" data-ru="Условия использования" data-uz="Foydalanish shartlari">Условия использования</a></li>
+      <li><a href="#" data-ru="Контакты" data-uz="Aloqa">Контакты</a></li>
+    </ul>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <span data-ru="© 2025 avto.ok. Все права защищены." data-uz="© 2025 avto.ok. Barcha huquqlar himoyalangan.">© 2025 avto.ok. Все права защищены.</span>
+    <span data-ru="Ташкент, Узбекистан" data-uz="Toshkent, O'zbekiston">Ташкент, Узбекистан</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
